@@ -1,0 +1,314 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:id="@+id/Holder_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:id="@+id/main_Layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/Top_Half_layout"
+                android:layout_width="match_parent"
+                android:layout_height="380dp"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:id="@+id/Left_l"
+                    android:layout_width="396dp"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:id="@+id/Rand_Button_L"
+                        android:layout_width="match_parent"
+                        android:layout_height="100dp"
+                        android:orientation="horizontal">
+
+                        <Button
+                            android:id="@+id/Random_Button"
+                            android:layout_width="325dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:text="Random" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/Surface_View_layout"
+                    android:layout_width="498dp"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <com.example.hw2.Face
+                        android:id="@+id/surfaceView"
+                        android:layout_width="500dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/Bottom_half_layout"
+                android:layout_width="match_parent"
+                android:layout_height="284dp"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:id="@+id/SeekBar_Layout"
+                    android:layout_width="1104dp"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:id="@+id/Seek1_L"
+                        android:layout_width="match_parent"
+                        android:layout_height="95dp"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:id="@+id/S1_label_L"
+                            android:layout_width="140dp"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/textView"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:text="RED"
+                                android:textAlignment="center"
+                                android:textColor="@android:color/holo_red_dark"
+                                android:textSize="40dp"
+                                android:translationY="15dp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/S1_L"
+                            android:layout_width="790dp"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+
+                            <SeekBar
+                                android:id="@+id/R_Bar"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:max="255"
+                                android:progress="128"
+                                android:progressTint="@android:color/holo_red_dark" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/Val_L"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/Red_Val"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:text="X"
+                                android:textAlignment="center"
+                                android:textColor="@android:color/holo_red_dark"
+                                android:textSize="40dp"
+                                android:translationY="15dp" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/Seek2_L"
+                        android:layout_width="match_parent"
+                        android:layout_height="95dp"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:id="@+id/S2_label_l"
+                            android:layout_width="140dp"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/Green_Lab"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Green"
+                                android:textAlignment="center"
+                                android:textColor="@android:color/holo_green_dark"
+                                android:textSize="40dp"
+                                android:translationY="15dp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/S2_L"
+                            android:layout_width="790dp"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+
+                            <SeekBar
+                                android:id="@+id/G_bar"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:max="255"
+                                android:progress="128"
+                                android:progressTint="@android:color/holo_green_dark" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/G_Val_L"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/Green_Val"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:text="X"
+                                android:textAlignment="center"
+                                android:textColor="@android:color/holo_green_dark"
+                                android:textSize="40dp"
+                                android:translationY="15dp" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/Seek3_L"
+                        android:layout_width="match_parent"
+                        android:layout_height="95dp"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:id="@+id/S3_label_L"
+                            android:layout_width="140dp"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/Blue_lab"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Blue"
+                                android:textAlignment="center"
+                                android:textColor="@android:color/holo_blue_dark"
+                                android:textSize="40dp"
+                                android:translationY="15dp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/S3_L"
+                            android:layout_width="790dp"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+
+                            <SeekBar
+                                android:id="@+id/B_Bar"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:max="255"
+                                android:progress="128"
+                                android:progressTint="@android:color/holo_blue_dark" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/B_Val_L"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/Blue_Val"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="X"
+                                android:textAlignment="center"
+                                android:textColor="@android:color/holo_blue_dark"
+                                android:textSize="40dp"
+                                android:translationY="15dp" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/Buttons_Layouts"
+                    android:layout_width="match_parent"
+                    android:layout_height="264dp"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:id="@+id/Spinner_Layout"
+                        android:layout_width="match_parent"
+                        android:layout_height="70dp"
+                        android:orientation="horizontal">
+
+                        <Spinner
+                            android:id="@+id/spinner"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:entries="@array/Hair_Styles" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="190dp"
+                        android:orientation="horizontal">
+
+                        <RadioGroup
+                            android:id="@+id/Radio_Group"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <RadioButton
+                                android:id="@+id/Hair_button"
+                                android:layout_width="match_parent"
+                                android:layout_height="63dp"
+                                android:checked="true"
+                                android:text="Hair"
+                                android:textSize="20dp" />
+
+                            <RadioButton
+                                android:id="@+id/Eyes_Button"
+                                android:layout_width="match_parent"
+                                android:layout_height="63dp"
+                                android:text="Eyes"
+                                android:textSize="20dp" />
+
+                            <RadioButton
+                                android:id="@+id/Skin_Button"
+                                android:layout_width="match_parent"
+                                android:layout_height="63dp"
+                                android:text="Skin"
+                                android:textSize="20dp" />
+                        </RadioGroup>
+                    </LinearLayout>
+
+                </LinearLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

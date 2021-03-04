@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">HW#2</string>
+    <string-array name = "Hair_Styles" >
+        <item>Bald</item>
+        <item>Bowl</item>
+        <item>Square</item>
+    </string-array>
+</resources>
