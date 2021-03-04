@@ -111,7 +111,6 @@
                                 android:layout_height="match_parent"
                                 android:layout_weight="1"
                                 android:max="255"
-                                android:progress="128"
                                 android:progressTint="@android:color/holo_red_dark" />
                         </LinearLayout>
 
@@ -169,7 +168,6 @@
                                 android:layout_height="match_parent"
                                 android:layout_weight="1"
                                 android:max="255"
-                                android:progress="128"
                                 android:progressTint="@android:color/holo_green_dark" />
                         </LinearLayout>
 
@@ -227,7 +225,6 @@
                                 android:layout_height="match_parent"
                                 android:layout_weight="1"
                                 android:max="255"
-                                android:progress="128"
                                 android:progressTint="@android:color/holo_blue_dark" />
                         </LinearLayout>
 
@@ -287,7 +284,8 @@
                                 android:layout_height="63dp"
                                 android:checked="true"
                                 android:text="Hair"
-                                android:textSize="20dp" />
+                                android:textSize="20dp"
+                                />
 
                             <RadioButton
                                 android:id="@+id/Eyes_Button"
